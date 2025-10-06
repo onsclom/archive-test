@@ -21,4 +21,4 @@ jobs:
         run: bun run build
       - name: Deploy Project Artifacts to Vercel
         # run: vercel deploy -d --token=${{ secrets.VERCEL_TOKEN }} --archive=tgz # with archive
-        run: vercel deploy -d --token=${{ secrets.VERCEL_TOKEN }} --archive=tgz # without
+        run: vercel deploy -d --token=${{ secrets.VERCEL_TOKEN }} # without
