@@ -12,10 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
-        run: npm install --global vercel@latest
+        # run: npm install --global vercel@latest
+        run: npm install --global https://vercel-dckw3egfv.vercel.sh/tarballs/vercel.tgz
       - name: Install bun
         run: npm install --global bun@latest
       - name: run build
         run: bun run build
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy -d --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy -d --token=${{ secrets.VERCEL_TOKEN }} --archive=tgz
