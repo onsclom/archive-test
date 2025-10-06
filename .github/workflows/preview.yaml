@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
-        # run: npm install --global vercel@latest
-        run: npm install --global https://vercel-dckw3egfv.vercel.sh/tarballs/vercel.tgz
+        run: npm install --global vercel@latest
+        # run: npm install --global https://vercel-dckw3egfv.vercel.sh/tarballs/vercel.tgz
       - name: Install bun
         run: npm install --global bun@latest
       - name: run build
