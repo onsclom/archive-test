@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
-        run: npm install --global https://vercel-50m13gr84.vercel.sh/tarballs/vercel.tgz # 20MB chunks
+        run: npm install --global https://vercel-50m13gr84.vercel.sh/tarballs/vercel.tgz # 20MB chunks (needs --archive too)
         # run: npm install --global https://vercel-dckw3egfv.vercel.sh/tarballs/vercel.tgz # dont reuse sockets
 
       - name: Install bun
